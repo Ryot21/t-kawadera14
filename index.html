@@ -203,7 +203,7 @@
             <div class="iconArea mgb5 mgb5s"><!-- ロゴ -->
                 <img src="images/sns/SVG/apple-touch-icon.svg" alt="Forest and lake">
             </div>
-            <div class="c-contents -imgBg color01_bg pdt5 pdb5 pdt5s pdb5s mgb10 mgb10s">
+            <div class="c-contents -imgBg color01_bg pdt5 pdb5 pdt5s pdb5s mgb10 mgb10s"><!-- コンセプト -->
                 <div class="c-contents-inner w640" style="text-align: center;">
                     <h2 class="s-3L -center -f-En03 -accent mgb10 mgb5s">Concept</h2>
                     <div class="imgBox">
@@ -263,6 +263,23 @@
                             </div>
                         </div>
                         
+                    </div>
+                </div>
+            </div>
+            <div class="c-contents -imgBg w1100 mgb10 mgb10s">
+                <div class="imgBox">
+                    <img class="sp"    src="images/bg/top-slider_bg_s.jpg" alt="住協グループ施工例のご紹介">
+                    <img class="tb-pc" src="images/bg/top-slider_bg.jpg"   alt="住協グループ施工例のご紹介">
+                </div>
+                <div class="c-contentsBox -topSlider">
+                    <div class="swiper swiper-Fview">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/slider/top-slide01.png" alt=""></div>
+                            <div class="swiper-slide"><img src="images/slider/top-slide02.png" alt=""></div>
+                            <div class="swiper-slide"><img src="images/slider/top-slide03.png" alt=""></div>
+                            <div class="swiper-slide"><img src="images/slider/top-slide04.png" alt=""></div>
+                        </div>
+                        <div class="swiper-pagination -type01"></div>
                     </div>
                 </div>
             </div>
@@ -420,23 +437,20 @@
     <!-- //固定アイテム -->
 
     <script>
-        // トップページ > fristView
+        // トップページ > カードレイアウト
         const FviewSwiper = new Swiper(".swiper-Fview", {
-            effect: 'fade',
-            fadeEffect: {crossFade: true,},
-            // loop: true,
-            speed: 3000,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-                waitForTransition: true,
-            },
-            grabCursor: true,
-            followFinger: false,
-            pagination: {
-                el: '.swiper-Fview .swiper-pagination',
-                clickable: true,
-            },
+        effect: "cards",
+        autoplay: true,
+        speed: 1500,
+        grabCursor: true,
+        mousewheelControl: true,
+        // pagination: {
+        //     el: '.swiper-pagination',
+        // },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
         });
     </script>
 </body>

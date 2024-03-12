@@ -8,7 +8,7 @@
         // }
         .swiper-slide{
             text-align: end;
-            opacity: .5;
+            // opacity: .5;
             overflow: hidden;
             transition: .5s all;
             img{
@@ -213,4 +213,10 @@
             }
         }
     }
+}
+
+// カードレイアウト用 > スタイル
+.swiper-3d .swiper-slide-shadow {
+    background: none;
+    // filter: drop-shadow(1px 1px 3px rgba(128, 128, 128, 0.507));
 }

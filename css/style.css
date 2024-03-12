@@ -4567,6 +4567,14 @@ button.swiper-pagination-bullet {
 .c-contents.-imgBg .c-contentsBox.-textBox03.-blue {
   background: #bfd0cf;
 }
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-topSlider {
+    top: 50%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+  }
+}
 
 .c-contents_title {
   position: relative;
@@ -5761,7 +5769,6 @@ a {
 }
 .swiper .swiper-wrapper .swiper-slide {
   text-align: end;
-  opacity: 0.5;
   overflow: hidden;
   transition: 0.5s all;
 }
@@ -5930,6 +5937,10 @@ a {
   width: 20px;
   border-radius: 5px;
   background: #5a8190;
+}
+
+.swiper-3d .swiper-slide-shadow {
+  background: none;
 }
 
 #popup,

@@ -476,6 +476,14 @@
 				&.-white{background: $main-color--w;}
 				&.-blue{background: $site-color01;}
 			}
+			&.-topSlider{
+				@include min(768){
+					top: 50%;
+					left: 67%;
+					transform: translate(-50%, -50%);
+					width: 60%;
+				}
+			}
 		}
 	}
 }
