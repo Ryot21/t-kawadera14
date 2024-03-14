@@ -12,6 +12,10 @@
 			width: 95%;
 		}
 	}
+	&.-borderArea{
+		border-top: 1px solid #d2d2d3;
+		border-bottom: 1px solid #d2d2d3;
+	}
 
 	&.-h-logo{
 		position: relative;
@@ -486,6 +490,72 @@
 				}
 			}
 
+			// ↓ 区画図関係
+			&.-serif01{
+				top: 25%;
+				left: 83%;
+				transform: translate(-50%, -50%);
+				width: 25%;
+				@include min(768){
+					top: 25%;
+					left: 89%;
+					width: 20%;
+				}
+			}
+			&.-serif02{
+				top: 35%;
+				left: 19%;
+				transform: translate(-50%, -50%);
+				width: 30%;
+				@include min(768){
+					top: 30%;
+					left: 36%;
+					width: 30%;
+				}
+			}
+			&.-serif03{
+				top: 72%;
+				left: 25%;
+				transform: translate(-50%, -50%);
+				width: 40%;
+				@include min(768){
+					top: 50%;
+					left: 26%;
+					width: 30%;
+				}
+			}
+			&.-serif04{
+				top: 63%;
+				left: 80%;
+				transform: translate(-50%, -50%);
+				width: 30%;
+				@include min(768){
+					top: 67%;
+					left: 85%;
+					width: 18%;
+				}
+			}
+			&.-serif05{
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 90%;
+				@include min(768){
+					width: 70%;
+				}
+			}
+			&.-info{
+				top: 79.5%;
+				left: 73%;
+				transform: translate(-50%, -50%);
+				width: 42%;
+				@include min(768){
+					top: 72.5%;
+					left: 22%;
+					width: 29.5%;
+				}
+			}
+
 			// ↓ Swiper関係の位置
 			&.-swiperContent01{
 				top: 60%;
@@ -498,6 +568,22 @@
 					width: 60%;
 				}
 			}
+			&.-swiperContent02{
+				top: 38%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 55%;
+				@include min(768){
+					top: 60%;
+					left: 75%;
+					width: 29%;
+				}
+				@include min(1200){
+					top: 55%;
+					left: 80%;
+					width: 35%;
+				}
+			}
 			&.-swiperBtn{
 				bottom: -15%;
 				left: 50%;
@@ -508,7 +594,40 @@
 					bottom: -5%;
 					left: 50%;
 					transform: translate(-50%, -50%);
-					width: 25%;
+					width: 35%;
+				}
+			}
+			&.-swiperBtn02{
+				bottom: -15%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 59%;
+
+				@include min(768){
+					bottom: -10%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 60%;
+					max-width: 160px;
+				}
+			}
+
+			&.-swiperTelop{
+				&_plan01{
+					top: 4%;
+					left: 90%;
+					transform: translate(-50%, -50%);
+					width: 100%;
+					@include min(768){
+						top: 0%;
+						left: 74%;
+						width: 130%;
+					}
+					@include min(1100){
+						top: 0%;
+						left: 120%;
+						width: 130%;
+					}
 				}
 			}
 		}
