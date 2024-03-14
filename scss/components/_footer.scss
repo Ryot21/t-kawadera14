@@ -245,13 +245,13 @@
 		}
 	}
 	&__btnArea{
-		width: 50%;
+		width: 45%;
 		margin: auto;
 		@include min(768){
-			width: 16%;
+			width: 20%;
 			max-width: 300px;
 		}
-		&.-col2{
+		&.-col2{// 新築戸建 ＋ 建築条件付土地
 			width: 80%;
 			margin: auto;
 			@include min(768){

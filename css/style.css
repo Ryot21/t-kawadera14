@@ -2710,8 +2710,13 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 1100px) {
   .w1100 {
-    width: 90% !important;
+    width: 63% !important;
     max-width: 1100px;
+  }
+}
+@media (width >= 768px) {
+  .w1100.-fview {
+    width: 90% !important;
   }
 }
 
@@ -2768,6 +2773,16 @@ button.swiper-pagination-bullet {
   .iconArea {
     width: 10%;
     max-width: 170px;
+  }
+}
+.iconArea_text {
+  width: 40%;
+  margin: auto;
+}
+@media (width >= 768px) {
+  .iconArea_text {
+    width: 20%;
+    max-width: 350px;
   }
 }
 
@@ -3485,12 +3500,12 @@ button.swiper-pagination-bullet {
   }
 }
 .c-footer__btnArea {
-  width: 50%;
+  width: 45%;
   margin: auto;
 }
 @media (width >= 768px) {
   .c-footer__btnArea {
-    width: 16%;
+    width: 20%;
     max-width: 300px;
   }
 }
@@ -4568,11 +4583,38 @@ button.swiper-pagination-bullet {
   background: #bfd0cf;
 }
 @media (width >= 768px) {
-  .c-contents.-imgBg .c-contentsBox.-topSlider {
+  .c-contents.-imgBg .c-contentsBox.-bannerBtn {
+    top: 80%;
+    left: 27.7%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+  }
+}
+.c-contents.-imgBg .c-contentsBox.-swiperContent01 {
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-swiperContent01 {
     top: 50%;
     left: 67%;
-    transform: translate(-50%, -50%);
     width: 60%;
+  }
+}
+.c-contents.-imgBg .c-contentsBox.-swiperBtn {
+  bottom: -15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 59%;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-swiperBtn {
+    bottom: -5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
   }
 }
 
@@ -5380,25 +5422,8 @@ button.swiper-pagination-bullet {
   }
 }
 .c-flex.-gaiyou li {
-  width: calc(50% - 5px);
-  margin: 0;
-}
-.c-flex.-gaiyou li:nth-child(1) {
-  margin-right: 5px !important;
-}
-.c-flex.-gaiyou li:nth-child(2) {
-  margin-left: 5px !important;
-}
-@media (width >= 768px) {
-  .c-flex.-gaiyou li {
-    width: calc(50% - 15px);
-  }
-  .c-flex.-gaiyou li:nth-child(1) {
-    margin-right: 15px !important;
-  }
-  .c-flex.-gaiyou li:nth-child(2) {
-    margin-left: 15px !important;
-  }
+  width: 100%;
+  margin: 0 auto;
 }
 @media (width >= 768px) {
   .c-flex.-gaiyou li.text {
@@ -5407,6 +5432,41 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-flex.-gaiyou li.img {
+    width: calc(65% - 15px);
+  }
+}
+.c-flex.-gaiyou.-col2 {
+  justify-content: space-between;
+  margin: 0;
+}
+.c-flex.-gaiyou.-col2 li {
+  width: calc(50% - 5px);
+  margin: 0;
+}
+.c-flex.-gaiyou.-col2 li:nth-child(1) {
+  margin-right: 5px !important;
+}
+.c-flex.-gaiyou.-col2 li:nth-child(2) {
+  margin-left: 5px !important;
+}
+@media (width >= 768px) {
+  .c-flex.-gaiyou.-col2 li {
+    width: calc(50% - 15px);
+  }
+  .c-flex.-gaiyou.-col2 li:nth-child(1) {
+    margin-right: 15px !important;
+  }
+  .c-flex.-gaiyou.-col2 li:nth-child(2) {
+    margin-left: 15px !important;
+  }
+}
+@media (width >= 768px) {
+  .c-flex.-gaiyou.-col2 li.text {
+    width: calc(35% - 15px);
+  }
+}
+@media (width >= 768px) {
+  .c-flex.-gaiyou.-col2 li.img {
     width: calc(65% - 15px);
   }
 }
@@ -5924,11 +5984,6 @@ a {
     background: #3b3b3b;
   }
 }
-.swiper .swiper-button-prev::after,
-.swiper .swiper-button-next::after {
-  color: white !important;
-  filter: drop-shadow(1px 1px 3px black);
-}
 .swiper .swiper-pagination.-type01 .swiper-pagination-bullet {
   box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.692);
   transition: all 1s;
@@ -5941,6 +5996,31 @@ a {
 
 .swiper-3d .swiper-slide-shadow {
   background: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  height: 50px;
+  width: 50px;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 50px;
+  margin: auto;
+  width: 50px;
+}
+
+/* 前への矢印カスタマイズ */
+.swiper-button-prev::after {
+  background-image: url(../images/SVG/left.svg);
+}
+
+/* 次への矢印カスタマイズ */
+.swiper-button-next::after {
+  background-image: url(../images/SVG/right.svg);
 }
 
 #popup,

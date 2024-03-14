@@ -476,12 +476,39 @@
 				&.-white{background: $main-color--w;}
 				&.-blue{background: $site-color01;}
 			}
-			&.-topSlider{
+
+			&.-bannerBtn{
+				@include min(768){
+					top: 80%;
+					left: 27.7%;
+					transform: translate(-50%, -50%);
+					width: 10%;
+				}
+			}
+
+			// ↓ Swiper関係の位置
+			&.-swiperContent01{
+				top: 60%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 75%;
 				@include min(768){
 					top: 50%;
 					left: 67%;
-					transform: translate(-50%, -50%);
 					width: 60%;
+				}
+			}
+			&.-swiperBtn{
+				bottom: -15%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 59%;
+
+				@include min(768){
+					bottom: -5%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 25%;
 				}
 			}
 		}

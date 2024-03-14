@@ -187,17 +187,7 @@
         }
     }
 
-    // 次に進む・前に戻るボタン
-    .swiper-button-prev,
-    .swiper-button-next{
-        &::after{
-            color: white !important;
-            filter: drop-shadow(1px 1px 3px black);
-            @include min(768){
 
-            }
-        }
-    }
 
     // 各スライダー > 共通パーツ > ドット
     .swiper-pagination{
@@ -219,4 +209,28 @@
 .swiper-3d .swiper-slide-shadow {
     background: none;
     // filter: drop-shadow(1px 1px 3px rgba(128, 128, 128, 0.507));
+}
+
+
+// 次に進む・前に戻るボタン
+.swiper-button-prev,
+.swiper-button-next{
+    height: 50px;
+    width: 50px;
+    &::after{
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: "";
+        height: 50px;
+        margin: auto;
+        width: 50px;
+    }
+}
+/* 前への矢印カスタマイズ */
+.swiper-button-prev::after {
+    background-image: url(../images/SVG/left.svg);
+}
+/* 次への矢印カスタマイズ */
+.swiper-button-next::after {
+    background-image: url(../images/SVG/right.svg);
 }
