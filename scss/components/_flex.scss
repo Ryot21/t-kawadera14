@@ -222,7 +222,9 @@
             width: calc(100%/5);
         }
     }
-    // コンテンツ_カラム（sp,pc:5）
+
+
+    // ------------- プロフィール --------------
     &.-profile{
         flex-wrap: wrap;
         li{
@@ -255,7 +257,53 @@
             }
         }
     }
-
+    // ------------- アクセス --------------
+    &.-trainInfo{
+        flex-wrap: wrap;
+        li{
+            @include max(768){
+                &:nth-child(1){
+                    width: calc(65% - 5%);
+                    margin-right: 5%;
+                }
+                &:nth-child(2){
+                    display: inline-block;
+                    width: calc(35% - 5%);
+                    margin-left: 5%;
+                }
+            }
+            @include min(768){
+                &:nth-child(1){
+                    width: calc(50% - 5%);
+                    margin-right: 5%;
+                }
+                &:nth-child(2){
+                    width: calc(50% - 5%);
+                    margin-left: 5%;
+                }
+            }
+        }
+        &.-r{
+            li{
+                &:nth-child(1){
+                    margin-left: 5%;
+                    margin-right: auto;
+                }
+                &:nth-child(2){
+                    margin-right: 5%;
+                    margin-left: auto;
+                }
+                @include min(768){
+                    &:nth-child(1){
+                        margin-left: 5%;
+                    }
+                    &:nth-child(2){
+                        margin-right: 5%;
+                    }
+                }
+            }
+        }
+    }
 
     // ------------- お店の情報 --------------
     &.-shop-information{
@@ -370,4 +418,6 @@
             }
         }
     }
+
+
 }

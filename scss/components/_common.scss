@@ -3,7 +3,7 @@
 // 横幅
 .w1100{
     @include min(768){
-        width: 95%;
+        width: 90%;
         margin: auto;
     }
     @include min(1100){
@@ -44,6 +44,12 @@
 }.w90{
     width: 90%;
     margin: auto;
+}
+.w95s{
+    @include max(768){
+        width: 95% !important;
+        margin: auto;
+    }
 }
 .w90s{
     @include max(768){

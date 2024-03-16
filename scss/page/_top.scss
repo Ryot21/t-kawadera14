@@ -5,7 +5,7 @@
 	height: 100vh;
 	animation: fadeAnime 3s forwards;
 	@include min(768){
-		animation: fadeAnime 2s forwards;
+		animation: fadeAnime 5s forwards;
 	}
 	.testBox{
 		width: 100vw;

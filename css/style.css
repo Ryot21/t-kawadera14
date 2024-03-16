@@ -2704,7 +2704,7 @@ button.swiper-pagination-bullet {
 
 @media (width >= 768px) {
   .w1100 {
-    width: 95%;
+    width: 90%;
     margin: auto;
   }
 }
@@ -2756,6 +2756,13 @@ button.swiper-pagination-bullet {
 .w90 {
   width: 90%;
   margin: auto;
+}
+
+@media (768px >= width) {
+  .w95s {
+    width: 95% !important;
+    margin: auto;
+  }
 }
 
 @media (768px >= width) {
@@ -3168,6 +3175,9 @@ button.swiper-pagination-bullet {
   }
   .c-header__navArea .c-header__navLists li.-grayOutItem {
     pointer-events: none;
+  }
+  .c-header__navArea .c-header__navLists.-col5 li {
+    width: 20%;
   }
   .c-header__navArea .c-header__navLists.-col6 li {
     width: 16.6666666667%;
@@ -4460,7 +4470,7 @@ button.swiper-pagination-bullet {
   }
 }
 .c-contents.-imgBg .c-contentsBox.-top01 {
-  top: 65%;
+  top: 70%;
   left: 70%;
   transform: translate(-50%, -50%);
   width: 50%;
@@ -4480,7 +4490,7 @@ button.swiper-pagination-bullet {
   }
 }
 .c-contents.-imgBg .c-contentsBox.-top02 {
-  top: 89%;
+  top: 92%;
   left: 30%;
   transform: translate(-50%, -50%);
   width: 50%;
@@ -4504,7 +4514,7 @@ button.swiper-pagination-bullet {
   left: 10%;
   width: 95%;
   padding: 1%;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.096);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.096);
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-textBox01 {
@@ -4545,14 +4555,19 @@ button.swiper-pagination-bullet {
   background: #ffffff;
 }
 .c-contents.-imgBg .c-contentsBox.-textBox01.-blue {
-  background: #bfd0cf;
+  background: #ffffff;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-textBox01.-blue {
+    background: #bfd0cf;
+  }
 }
 .c-contents.-imgBg .c-contentsBox.-textBox02 {
   top: 92.5%;
   left: 10%;
   width: 95%;
   padding: 1%;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.096);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.096);
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-textBox02 {
@@ -4566,7 +4581,12 @@ button.swiper-pagination-bullet {
   background: #ffffff;
 }
 .c-contents.-imgBg .c-contentsBox.-textBox02.-blue {
-  background: #bfd0cf;
+  background: #ffffff;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-textBox02.-blue {
+    background: #bfd0cf;
+  }
 }
 .c-contents.-imgBg .c-contentsBox.-textBox03 {
   width: 90%;
@@ -4591,6 +4611,26 @@ button.swiper-pagination-bullet {
     top: 80%;
     left: 27.7%;
     transform: translate(-50%, -50%);
+    width: 10%;
+  }
+}
+.c-contents.-imgBg .c-contentsBox.-bannerBtn02 {
+  top: 25%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-bannerBtn02 {
+    top: 80%;
+    left: 13.5%;
+    width: 15%;
+  }
+}
+@media (width >= 1400px) {
+  .c-contents.-imgBg .c-contentsBox.-bannerBtn02 {
+    top: 80%;
+    left: 11.5%;
     width: 10%;
   }
 }
@@ -4684,7 +4724,7 @@ button.swiper-pagination-bullet {
   }
 }
 .c-contents.-imgBg .c-contentsBox.-swiperContent02 {
-  top: 38%;
+  top: 36%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 55%;
@@ -4698,9 +4738,29 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 1200px) {
   .c-contents.-imgBg .c-contentsBox.-swiperContent02 {
-    top: 55%;
+    top: 52%;
     left: 80%;
     width: 35%;
+  }
+}
+.c-contents.-imgBg .c-contentsBox.-swiperContent03 {
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-swiperContent03 {
+    top: 40%;
+    left: 68%;
+    width: 63%;
+  }
+}
+@media (width >= 1200px) {
+  .c-contents.-imgBg .c-contentsBox.-swiperContent03 {
+    top: 44%;
+    left: 69%;
+    width: 57%;
   }
 }
 .c-contents.-imgBg .c-contentsBox.-swiperBtn {
@@ -4733,15 +4793,15 @@ button.swiper-pagination-bullet {
   }
 }
 .c-contents.-imgBg .c-contentsBox.-swiperTelop_plan01 {
-  top: 4%;
-  left: 90%;
+  top: 85%;
+  left: 100%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 90%;
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-swiperTelop_plan01 {
     top: 0%;
-    left: 74%;
+    left: 84%;
     width: 130%;
   }
 }
@@ -4750,6 +4810,36 @@ button.swiper-pagination-bullet {
     top: 0%;
     left: 120%;
     width: 130%;
+  }
+}
+@media (width >= 1600px) {
+  .c-contents.-imgBg .c-contentsBox.-swiperTelop_plan01 {
+    left: 144%;
+  }
+}
+.c-contents.-imgBg .c-contentsBox.-swiperTelop_equipment01 {
+  top: 84%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  width: 83%;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-swiperTelop_equipment01 {
+    top: 0%;
+    left: 84%;
+    width: 130%;
+  }
+}
+@media (width >= 1100px) {
+  .c-contents.-imgBg .c-contentsBox.-swiperTelop_equipment01 {
+    top: 0%;
+    left: 120%;
+    width: 130%;
+  }
+}
+@media (width >= 1600px) {
+  .c-contents.-imgBg .c-contentsBox.-swiperTelop_equipment01 {
+    left: 144%;
   }
 }
 
@@ -5451,6 +5541,46 @@ button.swiper-pagination-bullet {
   }
   .c-flex.-profile li:nth-child(3) {
     display: none;
+  }
+}
+.c-flex.-trainInfo {
+  flex-wrap: wrap;
+}
+@media (768px >= width) {
+  .c-flex.-trainInfo li:nth-child(1) {
+    width: 60%;
+    margin-right: 5%;
+  }
+  .c-flex.-trainInfo li:nth-child(2) {
+    display: inline-block;
+    width: 30%;
+    margin-left: 5%;
+  }
+}
+@media (width >= 768px) {
+  .c-flex.-trainInfo li:nth-child(1) {
+    width: 45%;
+    margin-right: 5%;
+  }
+  .c-flex.-trainInfo li:nth-child(2) {
+    width: 45%;
+    margin-left: 5%;
+  }
+}
+.c-flex.-trainInfo.-r li:nth-child(1) {
+  margin-left: 5%;
+  margin-right: auto;
+}
+.c-flex.-trainInfo.-r li:nth-child(2) {
+  margin-right: 5%;
+  margin-left: auto;
+}
+@media (width >= 768px) {
+  .c-flex.-trainInfo.-r li:nth-child(1) {
+    margin-left: 5%;
+  }
+  .c-flex.-trainInfo.-r li:nth-child(2) {
+    margin-right: 5%;
   }
 }
 .c-flex.-shop-information {
@@ -6463,7 +6593,7 @@ a {
 }
 @media (width >= 768px) {
   .p-top {
-    animation: fadeAnime 2s forwards;
+    animation: fadeAnime 5s forwards;
   }
 }
 .p-top .testBox {
@@ -6540,6 +6670,9 @@ a {
   width: 100vw;
   height: 150vh;
   background: rgba(0, 0, 0, 0.392);
+}
+.p-equipment .color01_bg {
+  background: #eee6dd;
 }
 
 .p-location {
