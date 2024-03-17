@@ -6293,13 +6293,25 @@ a {
   background: none;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.swiper-cards {
+  /* 前への矢印カスタマイズ */
+  /* 次への矢印カスタマイズ */
+}
+.swiper-cards .swiper-button-prev,
+.swiper-cards .swiper-button-next {
+  top: auto;
+  bottom: -25%;
   height: 50px;
   width: 50px;
 }
-.swiper-button-prev::after,
-.swiper-button-next::after {
+@media (width >= 768px) {
+  .swiper-cards .swiper-button-prev,
+  .swiper-cards .swiper-button-next {
+    bottom: -20%;
+  }
+}
+.swiper-cards .swiper-button-prev::after,
+.swiper-cards .swiper-button-next::after {
   background-repeat: no-repeat;
   background-size: contain;
   content: "";
@@ -6307,15 +6319,25 @@ a {
   margin: auto;
   width: 50px;
 }
-
-/* 前への矢印カスタマイズ */
-.swiper-button-prev::after {
+.swiper-cards .swiper-button-prev {
+  left: 25%;
+}
+.swiper-cards .swiper-button-prev::after {
   background-image: url(../images/SVG/left.svg);
 }
-
-/* 次への矢印カスタマイズ */
-.swiper-button-next::after {
+.swiper-cards .swiper-button-next {
+  right: 25%;
+}
+.swiper-cards .swiper-button-next::after {
   background-image: url(../images/SVG/right.svg);
+}
+@media (width >= 768px) {
+  .swiper-cards.swiper-content .swiper-button-prev {
+    left: 35%;
+  }
+  .swiper-cards.swiper-content .swiper-button-next {
+    right: 35%;
+  }
 }
 
 #popup,

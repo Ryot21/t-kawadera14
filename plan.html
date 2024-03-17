@@ -170,7 +170,7 @@
             <div class="c-contentsBox -swiperContent02">
                 <div class="c-contents -imgBg">
                     <div class="imgBox">
-                        <div class="swiper swiper-cards">
+                        <div class="swiper swiper-cards swiper-cards-top">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide"><img src="images/slider/plan-slide01.png" alt=""></div>
                                 <div class="swiper-slide"><img src="images/slider/plan-slide02.png" alt=""></div>
@@ -179,12 +179,9 @@
                                 <div class="swiper-slide"><img src="images/slider/plan-slide05.png" alt=""></div>
                                 <div class="swiper-slide"><img src="images/slider/plan-slide06.png" alt=""></div>
                             </div>
-                            <!-- <div class="swiper-pagination -type01"></div> -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
-                    </div>
-                    <div class="c-contentsBox -swiperBtn02">
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
                     </div>
                     <div class="c-contentsBox -swiperTelop_plan01">
                         <img src="images/SVG/swiperTelop-plan01.svg" alt="したいコトを、おもいっきり！">
@@ -359,7 +356,7 @@
 
     <script>
         // トップページ > カードレイアウト
-        const SwiperCards = new Swiper(".swiper-cards", {
+        const SwiperCards = new Swiper(".swiper-cards-top", {
         effect: "cards",
         autoplay: true,
         speed: 1500,

@@ -260,19 +260,15 @@
                 <div class="c-contentsBox -swiperContent01">
                     <div class="c-contents -imgBg">
                         <div class="imgBox">
-                            <div class="swiper swiper-cards">
+                            <div class="swiper swiper-cards swiper-cards01 swiper-content">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide"><img loading="lazy" src="images/slider/top-slide01.png" alt=""></div>
                                     <div class="swiper-slide"><img loading="lazy" src="images/slider/top-slide02.png" alt=""></div>
                                     <div class="swiper-slide"><img loading="lazy" src="images/slider/top-slide03.png" alt=""></div>
                                     <div class="swiper-slide"><img loading="lazy" src="images/slider/top-slide04.png" alt=""></div>
                                 </div>
-                                <!-- <div class="swiper-pagination -type01"></div> -->
-                            </div>
-                        </div>
-                        <div class="c-contentsBox -swiperBtn">
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>                            </div>
                         </div>
                     </div>
                 </div>
@@ -347,7 +343,7 @@
 
     <script>
         // トップページ > カードレイアウト
-        const SwiperCards = new Swiper(".swiper-cards", {
+        const SwiperCards01 = new Swiper(".swiper-cards01", {
             effect: "cards",
             autoplay: true,
             speed: 1500,

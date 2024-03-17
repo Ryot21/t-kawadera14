@@ -177,7 +177,7 @@
             <div class="c-contentsBox -swiperContent02">
                 <div class="c-contents -imgBg">
                     <div class="imgBox">
-                        <div class="swiper swiper-cards">
+                        <div class="swiper swiper-cards swiper-cards-top">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide"><img src="images/slider/location-slide01.png" alt=""></div>
                                 <div class="swiper-slide"><img src="images/slider/location-slide02.png" alt=""></div>
@@ -189,12 +189,9 @@
                                 <div class="swiper-slide"><img src="images/slider/location-slide08.png" alt=""></div>
                                 <div class="swiper-slide"><img src="images/slider/location-slide09.png" alt=""></div>
                             </div>
-                            <!-- <div class="swiper-pagination -type01"></div> -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
-                    </div>
-                    <div class="c-contentsBox -swiperBtn02">
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
                     </div>
                     <div class="c-contentsBox -swiperTelop_plan01">
                         <img src="images/SVG/swiperTelop-location01.svg" alt="レジャーも、自然も、何もかも。">
@@ -246,19 +243,18 @@
                         <li>
                             <div class="c-contents -imgBg">
                                 <div class="imgBox">
-                                    <div class="swiper swiper-cards">
+                                    <div class="swiper swiper-cards swiper-cards01">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide"><img loading="lazy" src="images/slider/access01-slide01.png" alt=""></div>
                                             <div class="swiper-slide"><img loading="lazy" src="images/slider/access01-slide02.png" alt=""></div>
                                             <div class="swiper-slide"><img loading="lazy" src="images/slider/access01-slide03.png" alt=""></div>
                                             <div class="swiper-slide"><img loading="lazy" src="images/slider/access01-slide04.png" alt=""></div>
                                         </div>
-                                        <!-- <div class="swiper-pagination -type01"></div> -->
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-button-next"></div>
                                     </div>
                                 </div>
                                 <div class="tb-pc c-contentsBox -swiperBtn02">
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-button-next"></div>
                                 </div>
                             </div>
                         </li>
@@ -275,19 +271,18 @@
                         <li>
                             <div class="c-contents -imgBg">
                                 <div class="imgBox">
-                                    <div class="swiper swiper-cards">
+                                    <div class="swiper swiper-cards swiper-cards02">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide"><img loading="lazy" src="images/slider/access02-slide01.png" alt=""></div>
                                             <div class="swiper-slide"><img loading="lazy" src="images/slider/access02-slide02.png" alt=""></div>
                                             <div class="swiper-slide"><img loading="lazy" src="images/slider/access02-slide03.png" alt=""></div>
                                             <div class="swiper-slide"><img loading="lazy" src="images/slider/access02-slide04.png" alt=""></div>
                                         </div>
-                                        <!-- <div class="swiper-pagination -type01"></div> -->
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-button-next"></div>
                                     </div>
                                 </div>
                                 <div class="tb-pc c-contentsBox -swiperBtn02">
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-button-next"></div>
                                 </div>
                             </div>
                         </li>
@@ -304,18 +299,15 @@
                         <li>
                             <div class="c-contents -imgBg">
                                 <div class="imgBox">
-                                    <div class="swiper swiper-cards">
+                                    <div class="swiper swiper-cards swiper-cards03">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide"><img loading="lazy" src="images/slider/access03-slide01.png" alt=""></div>
                                             <div class="swiper-slide"><img loading="lazy" src="images/slider/access03-slide02.png" alt=""></div>
                                             <div class="swiper-slide"><img loading="lazy" src="images/slider/access03-slide03.png" alt=""></div>
                                         </div>
-                                        <!-- <div class="swiper-pagination -type01"></div> -->
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-button-next"></div>
                                     </div>
-                                </div>
-                                <div class="tb-pc c-contentsBox -swiperBtn02">
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-button-next"></div>
                                 </div>
                             </div>
                         </li>
@@ -387,21 +379,52 @@
 
     <script>
         // トップページ > カードレイアウト
-        const SwiperCards = new Swiper(".swiper-cards", {
-        effect: "cards",
-        autoplay: true,
-        speed: 1500,
-        grabCursor: true,
-        mousewheelControl: true,
-        // pagination: {
-        //     el: '.swiper-pagination',
-        // },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
+        const SwiperCards = new Swiper(".swiper-cards-top", {
+            effect: "cards",
+            autoplay: true,
+            speed: 1500,
+            grabCursor: true,
+            mousewheelControl: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
         });
-        
+        const SwiperCards01 = new Swiper(".swiper-cards01", {
+            effect: "cards",
+            autoplay: true,
+            speed: 1500,
+            grabCursor: true,
+            mousewheelControl: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        const SwiperCards02 = new Swiper(".swiper-cards02", {
+            effect: "cards",
+            autoplay: true,
+            speed: 1500,
+            grabCursor: true,
+            mousewheelControl: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        const SwiperCards03 = new Swiper(".swiper-cards03", {
+            effect: "cards",
+            autoplay: true,
+            speed: 1500,
+            grabCursor: true,
+            mousewheelControl: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+
         // ポップアップ
         var luminousTrigger = document.querySelectorAll('.luminous');
         var options = {

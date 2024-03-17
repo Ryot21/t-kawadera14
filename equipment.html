@@ -171,7 +171,7 @@
             <div class="c-contentsBox -swiperContent02">
                 <div class="c-contents -imgBg">
                     <div class="imgBox">
-                        <div class="swiper swiper-cards">
+                        <div class="swiper swiper-cards swiper-cards-top">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide"><img src="images/slider/equipment-slide01.png" alt=""></div>
                                 <div class="swiper-slide"><img src="images/slider/equipment-slide02.png" alt=""></div>
@@ -180,12 +180,9 @@
                                 <div class="swiper-slide"><img src="images/slider/equipment-slide05.png" alt=""></div>
                                 <div class="swiper-slide"><img src="images/slider/equipment-slide06.png" alt=""></div>
                             </div>
-                            <!-- <div class="swiper-pagination -type01"></div> -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
-                    </div>
-                    <div class="c-contentsBox -swiperBtn02">
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
                     </div>
                     <div class="c-contentsBox -swiperTelop_equipment01">
                         <img src="images/SVG/swiperTelop-equipment01.svg" alt="最新の設備・仕様で安心の家づくりを！">
@@ -237,7 +234,7 @@
                 <div class="c-contentsBox -swiperContent03">
                     <div class="c-contents -imgBg">
                         <div class="imgBox">
-                            <div class="swiper swiper-cards">
+                            <div class="swiper swiper-cards swiper-cards01 swiper-content">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide"><img loading="lazy" src="images/slider/equipment02-slide01.png" alt=""></div>
                                     <div class="swiper-slide"><img loading="lazy" src="images/slider/equipment02-slide02.png" alt=""></div>
@@ -246,14 +243,10 @@
                                     <div class="swiper-slide"><img loading="lazy" src="images/slider/equipment02-slide05.png" alt=""></div>
                                     <div class="swiper-slide"><img loading="lazy" src="images/slider/equipment02-slide06.png" alt=""></div>
                                 </div>
-                                <!-- <div class="swiper-pagination -type01"></div> -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
                             </div>
                         </div>
-                        <div class="c-contentsBox -swiperBtn02">
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -322,7 +315,7 @@
 
     <script>
         // トップページ > カードレイアウト
-        const SwiperCards = new Swiper(".swiper-cards", {
+        const SwiperCards = new Swiper(".swiper-cards-top", {
         effect: "cards",
         autoplay: true,
         speed: 1500,
@@ -336,7 +329,17 @@
             prevEl: ".swiper-button-prev",
         },
         });
-        
+        const SwiperCards01 = new Swiper(".swiper-cards01", {
+            effect: "cards",
+            autoplay: true,
+            speed: 1500,
+            grabCursor: true,
+            mousewheelControl: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
         // ポップアップ
         var luminousTrigger = document.querySelectorAll('.luminous');
         var options = {
