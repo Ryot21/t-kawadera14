@@ -4618,7 +4618,7 @@ button.swiper-pagination-bullet {
   top: 25%;
   left: 80%;
   transform: translate(-50%, -50%);
-  width: 25%;
+  width: 35%;
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-bannerBtn02 {
