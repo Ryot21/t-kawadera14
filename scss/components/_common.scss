@@ -160,3 +160,13 @@
         padding: 3% 0 4%;
     }
 }
+
+.ppp{
+    @include min(768){
+        position: relative;
+        .c-contents{
+            position: absolute;
+            top: -10%;
+        }
+    }
+}

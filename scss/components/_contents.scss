@@ -357,6 +357,16 @@
 		position: relative;
 		.c-contentsBox{
 			position: absolute;
+			&.-eq-01{
+				@include min(768){
+					top: 25.5%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 100%;
+				}
+			}
+
+
 			// ヘッダーロゴ
 			&.-logo{
 				&-item01{//緑色の鳥
